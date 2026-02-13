@@ -1,81 +1,228 @@
+📘 Learning-JS
 
-# 📘 Learning-JS
+🚀 Learning-JS is a structured and progressive JavaScript learning repository documenting my journey from core fundamentals to advanced DOM-based builds and mini-projects.
 
-Welcome to Learning-JS — a beginner-friendly collection of JavaScript exercises, examples, and practical code files created to strengthen core JavaScript fundamentals.
+This repository is organized by learning phases: Core concepts, DOM manipulation, advanced implementations, practice problems, and revision modules.
 
-This project contains standalone JS topic scripts you can explore, run, and modify as you learn.
+📂 Project Structure
+Learning-JS/
+│
+├── CoreJS/ → JavaScript fundamentals
+├── DOM/ → DOM manipulation & interactive builds
+├── AdvanceJS/ → Advanced feature implementations
+├── practice/ → Logic-building & problem-solving exercises
+├── revision/ → Concept recap and reinforcement
+└── README.md
 
-🚀 Topics Covered
+🧠 1️⃣ CoreJS – JavaScript Fundamentals
 
-The project includes hands-on practice files for:
+This folder covers foundational concepts:
 
-✅ data_types.js — JavaScript data types
+Variables & Data Types
 
-✅ operators.js — Operators & expressions
+Operators
 
-✅ control_flow.js — If-else, switch
+Control Flow (if-else, switch)
 
-✅ loops.js — For, while, do-while
+Loops
 
-✅ functions.js — Function declaration & invocation
+Functions
 
-✅ arrays.js — Array basics and methods
+Arrays
 
-✅ objects.js — Objects & key/value access
+Objects
 
-✅ script.js — Demo scripts
+Basic script execution
 
-🧩 index.html — Starter HTML to run scripts
+Files include:
 
-Each file focuses on a single concept so beginners can understand and experiment step-by-step.
+data_types.js
 
-📚 Learning Resource
+operators.js
 
-This repository was built while following lessons from the Sheryians YouTube channel:
+control_flow.js
 
-👉 https://www.youtube.com/@sheryians
+loops.js
 
-Their tutorials helped guide the exercises and foundational JavaScript concepts covered in this repo.
+functions.js
 
-🧠 How to Use This Repo
+arrays.js
 
-Clone the repo:
+objects.js
 
-git clone https://github.com/anwaar-ahmad-dev/Learning-JS.git
+This section builds the core logic foundation.
 
+🌐 2️⃣ DOM – Document Object Model
 
-Navigate into the project:
+This is the most extensive part of the repository.
 
-cd Learning-JS
+It includes:
 
+🔹 Basic DOM Concepts
 
-Open index.html in a browser to run demo scripts.
+Attribute manipulation
 
-Or run individual .js files using Node.js:
+Text access
 
-node arrays.js
+Class & style manipulation
 
+Event handling
 
-(requires Node.js installed)
+Dynamic DOM updates
 
-💡 Why This is Useful
+🔹 Window Events
 
-A well-organized reference for fundamental JavaScript topics
+Scroll
 
-Ready-to-run examples you can modify yourself
+Resize
 
-Great for beginners and revision practice
+Load events
 
-Can be expanded with new topics
+🔹 Timers
 
-🤝 Contributors
+setTimeout
 
-This repo was created by anwaar-ahmad-dev as part of learning JavaScript and personal practice.
+setInterval
 
-📝 License
+🔹 Local Storage
 
-This project is open-source and free to use, modify, and share.
+Storing and retrieving data from browser storage
 
-📌 Notes
+🔹 Form Handling & Validation
 
-If you want to add more topics like DOM, events, ES6 features, asynchronous JS, or projects — feel free! Pull requests and improvements are welcome.
+Email/password validation
+
+Form validation logic
+
+🔹 23 Progressive Builds
+
+The Build1 to Build23 folders represent progressive DOM-based mini implementations including:
+
+UI interaction experiments
+
+Dynamic components
+
+Event-based logic
+
+Styling integration
+
+Image-based builds
+
+Validation systems
+
+Each build contains:
+
+index.html
+
+script.js / index.js
+
+style.css (where applicable)
+
+This section reflects practical learning and real DOM manipulation practice.
+
+⚡ 3️⃣ AdvanceJS
+
+Contains advanced feature-based implementations.
+
+🔔 Toaster Component
+
+Located in:
+
+AdvanceJS/toaster/
+
+Includes:
+
+Custom notification logic
+
+Position-based UI rendering
+
+Dynamic class handling
+
+Event-driven behavior
+
+🧩 4️⃣ Practice
+
+Focused on logic-building and real-world exercises:
+
+BMI Calculator
+
+Discount Calculator
+
+Object practice
+
+Function practice
+
+Form practice
+
+General JavaScript problem-solving
+
+This section strengthens algorithmic thinking.
+
+🔁 5️⃣ Revision
+
+Contains recap files to reinforce previously learned concepts.
+
+Used for:
+
+Rewriting concepts from memory
+
+Practicing fundamentals again
+
+Strengthening retention
+
+🎯 Skills Covered
+
+This repository demonstrates practical understanding of:
+
+JavaScript fundamentals
+
+DOM manipulation
+
+Event handling
+
+Dynamic UI logic
+
+Form validation
+
+Local storage
+
+Timers & asynchronous behavior
+
+Component-based thinking
+
+🛠 How to Run
+▶ Run CoreJS or Practice Files with Node:
+node CoreJS/arrays.js
+
+▶ Run DOM / Builds:
+
+Open the respective index.html file in a browser.
+
+🎥 Learning Source
+
+This learning journey was guided by tutorials from Sheryians Coding School on YouTube.
+
+Their structured teaching approach helped in building this organized learning repository.
+
+📈 Future Plans
+
+ES6+ deep dive
+
+Promises & Async/Await
+
+API integration
+
+Modular JavaScript
+
+Mini real-world projects
+
+Refactoring builds into reusable components
+
+📌 About This Repository
+
+This repository represents a continuous JavaScript learning journey.
+It is structured to show progression from basics to practical DOM-based implementations.
+
+⭐ If You Find This Useful
+
+Consider starring the repository to support the learning journey.
