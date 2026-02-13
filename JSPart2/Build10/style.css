@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #69aeea, rgba(176, 58, 160, 0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    /* padding-bottom: 30px; */
+}
+
+.container{
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    width: 50vw;
+    border-radius: 14px;
+    padding: 0 10px;
+    box-shadow: 10px 10px 30px gray;
+    /* margin-bottom: 40px; */
+}
+.container h1{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.todo-input{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* background: yellow; */
+    /* border-bottom: 1px solid lightgrey; */
+    padding: 6px;
+    border-radius: 40px;
+    box-shadow: 0, 15px, 35px, rgba(0, 0, 0, 1);
+    width: 48vw;
+    position: relative;
+}
+
+.todo-input input{
+    flex: 1;
+    /* border: none; */
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px 130px 10px 20px;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input button{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #3b82f6, #d63cd1);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tasks{
+    padding: 20px 10px;
+    margin-top: 15px;
+}
+
+.text{
+    display: inline-block;
+    margin-left: 10px;
+    color: #444;
+    user-select: none;
+}
+.toggle{
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-line{
+    display: flex;
+    /* justify-content:; */
+    padding: 10px;
+}
+
+.task-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    user-select: none;
+}
+
+.task-div i{
+    color: green;
+    /* background-color: #999; */
+    padding: 5px;
+    border-radius: 50%;
+    font-weight: 900;
+}

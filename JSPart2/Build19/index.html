@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .custom-select {
+            width: 250px;
+            padding: 12px 40px 12px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            background-color: #fff;
+            color: #333;
+
+            appearance: none;
+            /* remove default arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png");
+            background-repeat: no-repeat;
+            background-size: 14px;
+            background-position: right 15px center;
+
+            cursor: pointer;
+        }
+
+        .custom-select:focus {
+            outline: none;
+            border-color: #6c63ff;
+            box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Choose your background color</h1>
+        <select id="colorSelect" class="custom-select">
+            <option value="" selected disabled>Select a color</option>
+            <option value="lightgray">Lightgray</option>
+            <option value="lightgreen">Lightgreen</option>
+            <option value="lightblue">Lightblue</option>
+            <option value="lightyellow">Lightyellow</option>
+            <option value="lightpink">Lightpink</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

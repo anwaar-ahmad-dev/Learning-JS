@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <form id="quiz-form">
+            <h1><u>-Quiz-</u> 🧠</h1>
+
+            
+            <fieldset class="question">
+                <legend>1. What does HTML stands for?</legend>
+
+                <label>
+                    <input type="radio" name="q1" value="a" required>
+                    Hyper Text Markup Language.
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b" required>
+                    Hyper Text Machine Language.
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c" required>
+                    Hyper Transfer Markup Language.
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="d" required>
+                    None of the above.
+                </label>
+            </fieldset>
+
+
+            <fieldset class="question">
+                <legend>2. Which tag is used to create a hyperlink in HTML?</legend>
+
+                <label>
+                    <input type="radio" name="q2" value="a" required>
+                    &lt;link&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b" required>
+                    &lt;a&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c" required>
+                    &lt;href&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="d" required>
+                    &lt;url&gt;
+                </label>
+            </fieldset>
+
+            
+            <fieldset class="question">
+                <legend>3. Which HTML tag is used to display an image?</legend>
+
+                <label>
+                    <input type="radio" name="q3" value="a" required>
+                    &lt;image&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b" required>
+                    &lt;img&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c" required>
+                    &lt;picture&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="d" required>
+                    &lt;src&gt;
+                </label>
+            </fieldset>
+
+            
+            <fieldset class="question">
+                <legend>4. Which HTML tag is used for the largest heading?</legend>
+
+                <label>
+                    <input type="radio" name="q4" value="a" required>
+                    &lt;h6&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b" required>
+                    &lt;heading&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c" required>
+                    &lt;head&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="d" required>
+                    &lt;h1&gt;
+                </label>
+            </fieldset>
+
+            
+            <fieldset class="question">
+                <legend>5. Which attribute is used to provide alternative text for images?</legend>
+
+                <label>
+                    <input type="radio" name="q5" value="a" required>
+                    title
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b" required>
+                    src
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c" required>
+                    alt
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="d" required>
+                    href
+                </label>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="button" class="quit">Quit</button>
+                <h3>Attempted: <span id="attempted">0</span>/5</h3>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+        
+        <!-- <div class="result-card">
+            <h2>Quiz Result</h2>
+            <div class="result">
+                <h3>Correct ✅ : <span id="correctSpan">0</span></h3>
+                <h3>Incorrect ❌ : <span id="incorrectSpan">0</span></h3>
+            </div>
+            <button>Back to Quiz</button>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

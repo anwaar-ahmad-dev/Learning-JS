@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover-Mouseout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: #555;
+            /* color: white; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            width: 400px;
+        }
+
+        .card{
+            display: none;
+            max-height: 400px;
+            position: absolute;
+            width: 300px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .image{
+            height: 150px;
+            /* width: 100%; */
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .info{
+            margin-top: 5px;
+            padding: 10px;
+            background-color: #888;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Modern racing cars push limits where <span id="formula-one"><u>Formula one</u></span> machines blend aerodynamic, speed, strategy, technology, drivers, teamwork wordwide every season fiercely.</h3>
+
+        <div class="card">
+            <div class="image">
+                <img src="dp.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Formula One</h3>
+                <p>Formula one cars combine cutting-edge aerodynamics, hybrid power units, and lightweight materials to achieve extreme speed, precision and safety.They demand exeptional driver skill, rapid team strategy, and constant innovation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

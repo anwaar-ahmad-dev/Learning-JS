@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="download-wrapper" id="downloadWrapper">
+
+        <!-- Download Button -->
+        <button class="download-btn" id="downloadBtn">
+            Download Now
+        </button>
+
+        <!-- Countdown Card -->
+        <div class="card countdown-card" id="countdownCard">
+            <p class="countdown-text" id="countdownText">
+                Downloading starts in <span id="countValue">10</span>
+            </p>
+        </div>
+
+        <!-- Progress Card -->
+        <div class="card progress-card" id="progressCard">
+
+            <p class="progress-title" id="progressTitle">
+                Downloading..
+            </p>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <!-- Percentage -->
+            <p class="progress-percent" id="progressPercent">
+                0%
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

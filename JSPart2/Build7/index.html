@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse-Trail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            /* position: relative; */
+            height: 100%;
+            width: 100%;
+            /* background-color: #555; */
+            background: linear-gradient(135deg, lightgreen, darkblue);
+            overflow: hidden;
+        }
+
+        .circle {
+            height: 10px;
+            width: 10px;
+            background-color: rgb(0, 255, 195);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 5px 5px 12px rgb(17, 219, 179);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <div class="circle"></div> -->
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
