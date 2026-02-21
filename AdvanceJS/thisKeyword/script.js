@@ -171,6 +171,37 @@ const person = {
     name: "Ariz",
 };
 
-function def(age) {
-    console.log(this.name,)
+function def(age, city) {
+    console.log(this.name + age + city);
 }
+
+def.call(person, 21, "Delhi"); // output --> Umar21Delhi
+
+//---------------------------------
+// apply()
+// it is same as the call() but it takes the extra arguments inside an array.
+// the call and apply both gets immediately invoked. 
+const fello = {
+    name: "Ariz",
+}
+
+function something(age, city) {
+    console.log(this.name + age + city);
+}
+
+something.apply(fello, [21, "Delhi"]);
+
+//---------------------------------------------------------------
+
+// bind() // it does not invoke the function immediately instead increates a binded copy of the function and later that copy can be stored in a variable and that variable can  be called.
+
+const heyhey = {
+    name: "Someone",
+}
+
+function kuchhkuch(age, city) {
+    console.log(this.name + age + city);
+}
+
+let newFnc = kuchhkuch.bind(heyhey, 21, "Delhi"); // does not gets invoked.
+newFnc(); // we called this function to actually call the binded function.
