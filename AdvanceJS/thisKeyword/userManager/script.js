@@ -12,9 +12,36 @@ const userManager = {
     submitForm: function (e) {
         e.preventDefault();
         this.addUser();
+
+        // alert message
+
+        function showAlert(message, time = 3000) {
+            const alert = document.createElement("div");
+            alert.textContent = message;
+
+            alert.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #15d539;
+                color: white;
+                padding: 12px 18px;
+                border-radius: 8px;
+                z-index: 9999;
+            `;
+
+            document.body.appendChild(alert);
+
+            setTimeout(() => alert.remove(), time);
+        }
+
+        showAlert("Profile Added Successfully!", 3000);
     },
     addUser: function () {
+        let userId = Date.now();
         this.users.push({
+            id: userId,
             username: username.value,
             role: role.value,
             bio: bio.value,
@@ -28,7 +55,8 @@ const userManager = {
         this.users.forEach(function (user) {
             const card = document.createElement("div");
             card.className =
-                "bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition";
+                "relative bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition";
+            card.dataset.id = user.id;
 
             // Image
             const img = document.createElement("img");
@@ -56,12 +84,28 @@ const userManager = {
             desc.textContent = user.bio;
             card.appendChild(desc);
 
+            // Creating a delete button
+            const deleteBtn = document.createElement("button");
+            deleteBtn.className =
+                "absolute top-3 right-3 bg-red-500 hover:bg-red-600 text-white text-sm px-3 py-2 rounded-full shadow-md transition";
+            deleteBtn.innerHTML = '<i class="ri-delete-bin-6-line"></i>';
+
+            deleteBtn.addEventListener("click", () => {
+                userManager.removeUser(user.id);
+            });
+
+            card.appendChild(deleteBtn);
+
             // Finally, append the card wherever needed, for example:
 
             document.querySelector(".users").appendChild(card);
+
         });
     },
-    removeUser: function () { },
+    removeUser: function (id) {
+        this.users = this.users.filter((user) => user.id !== id);
+        this.renderui();
+    },
 };
 
 userManager.init();
