@@ -24,6 +24,7 @@ const userManager = {
                 top: 20px;
                 left: 50%;
                 transform: translateX(-50%);
+                
                 background: #15d539;
                 color: white;
                 padding: 12px 18px;
