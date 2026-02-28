@@ -30,3 +30,7 @@ class CreatePencil {
 
 let p1 = new CreatePencil("Natraj", "natraj", 10, "black");
 let p2 = new CreatePencil("Apsara", "apsara", 15, "blue");
+
+
+
+

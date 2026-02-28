@@ -63,3 +63,20 @@ let pencil2 = new CreatePencil("Doms", 10, "red", "doms");
 // accessing the write function...
 pencil1.write("Hey kaise ho?")// uisng the pencil1 instance.
 pencil2.write("Mai badhiya hu..!")// uisng the pencil2 instance.
+
+
+
+// __proto__ and prototype chaining 
+
+function Faaltu(name) {
+    this.name = name;
+}
+
+Faaltu.prototype.greet = function () {
+    console.log(this.name + "hello");
+}
+
+let pagla1 = new Faaltu("ariz");
+pagla1.greet();
+
+console.log(Object.getPrototypeOf(pagla1)); // it gives the greet function in console.
